@@ -28,6 +28,12 @@
         templateUrl: "js/songs/new.html",
         controller: "SongsNewController",
         controllerAs: "SongsNewViewModel"
+      })
+      .state("editSong", {
+        url: "/songs/:id/edit",
+        templateUrl: "js/songs/edit.html",
+        controller: "SongsEditController",
+        controllerAs: "SongsEditViewModel"
       });
   }
 }());

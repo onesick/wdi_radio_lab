@@ -9,11 +9,11 @@
   ])
   .config([
     "$stateProvider",
-    "$locationProvider",
+    // "$locationProvider",
     routerFunction
   ]);
 
-  function routerFunction($stateProvider, $locationProvider){
+  function routerFunction($stateProvider/*, $locationProvider*/){
     $stateProvider
     .state("welcome", {
       url: "/",
@@ -32,7 +32,7 @@
       controllerAs: "songsShowViewModel"
     })
 
-    $locationProvider.html5Mode({enabled: true, requireBase: true});
+    // $locationProvider.html5Mode({enabled: true, requireBase: true});
   };
 
 }());
